@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+/* GOOGLE FONT API */
+@import "http://fonts.googleapis.com/css?family=Unkempt";
+@import "http://fonts.googleapis.com/css?family=Just+Another+Hand";
+
+body {margin:0;padding:0;background:#eee;font-family:Arial, Helvetica, sans-serif;font-size:12px;}
+
+#wrapper {margin:0 auto;padding:0;width:1000px;}
+
+#header .wrapper, #content .wrapper {margin:0;padding:0;overflow:auto;}
+
+#header {margin:0;padding:0;background:#050;}
+
+#header .wrapper .sudoku {margin:20px;padding:0;text-align:center;float:right;}
+#header .wrapper .sudoku h1 {margin:0;padding:0;font-family:Tahoma, Geneva, sans-serif;color:#ffffff;font-size:18px;font-weight:bold;text-transform:uppercase;text-shadow:#222222 1px 1px 0;}
+
+#content {margin:20px 0;padding:0;background:#ffffff;}
+
+#content .wrapper .notice {display:none;margin:20px 20px 0 20px;paddding:0;width:958px;border:1px solid #ffcc00;background:#ffeb90;overflow:auto;}
+#content .wrapper .notice .content {margin:0 10px;padding:0;float:left;}
+#content .wrapper .notice .content p {margin:10px 0;padding:0;color:;clear:both;}
+#content .wrapper .notice .content p a {color:#0066cc;text-decoration:none;}
+#content .wrapper .notice .content p a:hover {text-decoration:underline;}
+#content .wrapper .notice span.button {margin:10px;padding:0;float:right;}
+#content .wrapper .notice span.button a {color:#dd0000;text-decoration:none;}
+
+#content .wrapper #page {margin:20px;paddding:0;width:520px;float:left;}
+#content .wrapper #page .title {margin:0;padding:0;}
+#content .wrapper #page .title h1 {margin:0;padding:0;font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;color:#000000;}
+#content .wrapper #page .title h1 a {color:#455565;text-decoration:none;}
+#content .wrapper #page .title h1 span {margin:10px;}
+#content .wrapper #page .content {margin:20px 0;padding:0;}
+#content .wrapper #page .content p {margin:10px 0;padding:0;line-height:18px;}
+#content .wrapper #page .content .button {margin:20px;padding:0;width:auto;display:block;overflow:auto;clear:both;}
+#content .wrapper #page .content .button ul {margin:0;padding:0;width:auto;display:block;overflow:hidden;list-style-type:none;list-style-position:inside;text-align:center;}
+#content .wrapper #page .content .button ul li {margin:0 auto;display:inline-block;}
+#content .wrapper #page .content .button ul li input[type="button"] {margin:0 5px;display:block;}
+
+#content .wrapper #page .block {margin:20px 0;padding:0;width:520px;background:#ffffff;}
+#content .wrapper #page .block .title {margin:0;padding:0;width:518px;overflow:auto;background:#f2f2f2;border:1px solid #dddddd;}
+#content .wrapper #page .block .title h3 {margin:20px;padding:0;float:left;color:#555555;text-shadow:#ffffff 1px 1px 0;font-family:Tahoma, Geneva, sans-serif;}
+#content .wrapper #page .block .content {margin:-1px 0 0 0;padding:0;width:518px;border:1px solid #e8e8e8;border-top:1px solid #dddddd;background:#ffffff;}
+#content .wrapper #page .block .content p {margin:20px;}
+#content .wrapper #page .block .content p.datetime {font-size:16px;text-align:center;}
+
+#content .wrapper .left {margin:20px 0 0 20px;paddding:0;float:left;}
+#content .wrapper .right {margin:20px 20px 0 0;paddding:0;float:right;}
+
+#content .wrapper .sidebar {paddding:0;width:200px;}
+#content .wrapper .sidebar .block {margin:0 0 20px 0;padding:0;width:198px;border:1px solid #cddeef;background:#ffffff;}
+#content .wrapper .sidebar .block .title {margin:0;padding:0;overflow:auto;border-bottom:1px solid #cddeef;display:block;background:#f1f3f8;}
+#content .wrapper .sidebar .block .title h3 {margin:10px;padding:0;float:left;color:#0099cc;text-shadow:#ffffff 1px 1px 0;font-family:Tahoma, Geneva, sans-serif;}
+#content .wrapper .sidebar .block .title a {display:none;margin:0;padding:0;float:right;color:#888888;font-family:Tahoma, Geneva, sans-serif;}
+
+#content .wrapper .sidebar .block .content {margin:0;padding:0;background:#ffffff;}
+#content .wrapper .sidebar .block .content p {margin:10px;padding:0;line-height:18px;color:#444444;}
+#content .wrapper .sidebar .block .content ul.menu {margin:10px;padding:0;list-style-type:none;list-style-position:inside;}
+#content .wrapper .sidebar .block .content ul.menu li {margin:5px 0;padding:0 0 10px 0;border-bottom:1px solid #eeeeee;}
+#content .wrapper .sidebar .block .content ul.menu li a {color:#666666;text-decoration:none;}
+#content .wrapper .sidebar .block .content ul.menu li a:hover {color:#222222;text-decoration:underline;}
+
+#content .wrapper .sidebar .block .content ul.font {margin:10px auto;padding:0;width:70px;list-style-type:none;list-style-position:inside;overflow:hidden;display:block;font-family:"Arial Black", Gadget, sans-serif;}
+#content .wrapper .sidebar .block .content ul.font li {margin:0;padding:0;float:left;display:block;height:35px;width:35px;line-height:35px;text-align:center;}
+#content .wrapper .sidebar .block .content ul.font li a {text-decoration:none;padding:5px;}
+#content .wrapper .sidebar .block .content ul.font li.increase {font-size:24px;}
+#content .wrapper .sidebar .block .content ul.font li.increase a {color:#000000;}
+#content .wrapper .sidebar .block .content ul.font li.decrease {font-size:18px;}
+#content .wrapper .sidebar .block .content ul.font li.decrease a {color:#555555;}
+
+#footer {margin:0;padding:0;width:1000px;background:#445566;overflow:auto;}
+#footer .copyright {margin:10px;padding:0;float:left;}
+#footer .copyright p {margin:0;padding:0;color:#ffffff;font-family:Tahoma, Geneva, sans-serif;}
+#footer .style {margin:10px;padding:0;float:right;}
+
+.board {margin:20px auto;padding:0;width:415px;background:#ffffff;overflow:hidden;}
+.board ul {margin:-5px -15px -15px -5px;padding:0;list-style-position:inside;list-style-type:none;overflow:hidden;float:left;}
+.board ul li .grid {margin:0 10px 10px 0;padding:0;width:135px;height:135px;float:left;}
+.board ul li .grid ul {margin:0;padding:0;width:135px;height:135px;}
+.board ul li .grid ul li .box {margin:5px;padding:0;width:35px;height:35px;float:left;}
+.board ul li .grid ul li .box input[type="text"] {margin:0;padding:5px;width:23px;height:23px;border:1px solid #dddddd;text-align:center;}

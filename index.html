@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Javascript Sudoku</title>
+	<link rel="stylesheet" href="css/main.css" type="text/css" />
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<div class="wrapper">
+				<div class="sudoku">
+					<h1>Sudoku made with javascript</h1>
+				</div>
+			</div>
+		</div>
+		<div id="content">
+			<div class="wrapper">
+				<div class="left sidebar">
+					<div class="block">
+						<div class="title"><h3>Difficulty</h3><a href="">Show/Hide</a></div>
+						<div class="content">
+							<ul class="menu">
+								<li>Easy</li>
+								<ul class="menu">
+									<li><a href="index.html?level14">4x4</a></li>
+									<li><a href="index.html?level19">9x9</a></li>
+								</ul>
+								<li>Medium</li>
+								<ul class="menu">
+									<li><a href="index.html?level24">4x4</a></li>
+									<li><a href="index.html?level29">9x9</a></li>
+								</ul>
+								<li>Hard</li>
+								<ul class="menu">
+									<li><a href="index.html?level34">4x4</a></li>
+									<li><a href="index.html?level39">9x9</a></li>
+								</ul>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div id="page">
+					<!-- I hate inline JS -->
+					<script>
+						getLevel();
+					</script>
+					<div class="block">
+						<div class="title"><h3>Sudoku</h3></div>
+						<div class="content">
+							<div id="board" class="board">
+							<script type="text/javascript">
+								initBoard();
+							</script>
+							<div style="clear:both;"></div>
+							</div>
+
+							<div class="button">
+								<ul>
+									<li><input type="button" onclick="reset()" value="Reset" /></li>
+									<li><input type="button" onclick="check()" value="Check" /></li>
+									<li><input type="button" onclick="solve()" value="Solve" /></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="content">
+						<p></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
